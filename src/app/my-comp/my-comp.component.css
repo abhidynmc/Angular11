@@ -2,3 +2,23 @@ p{
     color:red;
     font-size: 45px;
 }
+
+.myClass{
+    color:rgb(53, 180, 48);
+    font-size: 25px;
+    font-style: italic;
+}
+
+.specialClass{
+    color:rgb(74, 109, 221);
+    font-size: 50px;
+    font-style: italic;
+}
+
+.fontClass{
+    font-size: 80px;
+}
+
+.colorClass{
+    color:rgb(211, 98, 192);
+}

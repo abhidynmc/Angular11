@@ -1,8 +1,7 @@
 <p>my-comp works!</p>
-<p>This is the output : {{myString}}</p>
-<p>This is a number : {{myNumber + 45}}</p>
-<p>My Car name is :: {{myJSON.carName}}</p>
-<br>
-<img src="{{myImage}}">
-<br>
-<img [src]="myImage">
+<div class="myClass"> This is a normal styles</div>
+<div [class]="myvar"> This is from TS.</div>
+<div [class.myClass]="isStyleActive"> This is a conditional</div>
+<div [class.myClass]="!isStyleActive"> This is a conditional</div>
+<div [class]="styleCheck"> This is from style Check.</div>
+<div [ngClass]="styleCheck"> This is from style Check.</div>
