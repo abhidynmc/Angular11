@@ -6,17 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-comp.component.css']
 })
 export class MyCompComponent implements OnInit {
-  myvar="myClass";
-  isStyleActive:boolean = true;
-  isSpecialActive:boolean = true;
-  isFontActive: boolean =false;
-  isColorActive : boolean = true;
-  styleCheck={
-    specialClass:this.isSpecialActive,
-    fontClass: this.isFontActive,
-    colorClass: this.isColorActive
+  ifError:boolean = false;
+  myStyle={
+    'background-color':'yellow',
+    'color':this.ifError? 'red' :'blue',
+    'font-weight':'bold'
   }
-
   constructor() { }
   
   ngOnInit(): void {

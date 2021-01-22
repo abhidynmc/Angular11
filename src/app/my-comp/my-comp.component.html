@@ -1,7 +1,8 @@
 <p>my-comp works!</p>
-<div class="myClass"> This is a normal styles</div>
-<div [class]="myvar"> This is from TS.</div>
-<div [class.myClass]="isStyleActive"> This is a conditional</div>
-<div [class.myClass]="!isStyleActive"> This is a conditional</div>
-<div [class]="styleCheck"> This is from style Check.</div>
-<div [ngClass]="styleCheck"> This is from style Check.</div>
+<div [style.color]="'red'">This is a Msg.</div>
+<div [style.color]="'yellow'"
+    [style.text-align]="'center'">This is a Msg.</div>
+
+<div [style.color]="ifError ? 'red' : 'green'">This is conditional</div>
+<div [style.font-size.px]="ifError ? '30' : '50'"> This is at deeper level</div>
+<div [ngStyle]="myStyle">This is from Obj</div>
