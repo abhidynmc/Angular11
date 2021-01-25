@@ -1,8 +1,8 @@
 <p>my-comp works!</p>
-<div [style.color]="'red'">This is a Msg.</div>
-<div [style.color]="'yellow'"
-    [style.text-align]="'center'">This is a Msg.</div>
-
-<div [style.color]="ifError ? 'red' : 'green'">This is conditional</div>
-<div [style.font-size.px]="ifError ? '30' : '50'"> This is at deeper level</div>
-<div [ngStyle]="myStyle">This is from Obj</div>
+<p>{{myText}}</p>
+<button (click)="changeText()">Click Me!</button>
+<br><br>
+<button (click)="changeEvent($event)">Click Me!</button>
+<hr>
+<input (keyup)="onKeyPressed($event)">
+<p>{{myInputText}}</p>

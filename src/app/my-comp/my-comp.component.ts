@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-my-comp',
@@ -6,14 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-comp.component.css']
 })
 export class MyCompComponent implements OnInit {
-  ifError:boolean = false;
-  myStyle={
-    'background-color':'yellow',
-    'color':this.ifError? 'red' :'blue',
-    'font-weight':'bold'
-  }
-  constructor() { }
+  myText:string ="This is mytext";
+  myInputText:string ="";
   
+  constructor() { }
+
+  changeText(){
+    this.myText = "This is new";
+  }
+  changeEvent(event:any){
+    console.log(event);
+    console.log(event.srcElement.innerText);
+    event.srcElement.innerText = "This Has been changed";
+  }
+
+  onKeyPressed(event:any){
+    this.myInputText+=event.target.value + ' && ';
+  }
+  
+
   ngOnInit(): void {
   }
 
