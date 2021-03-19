@@ -1,8 +1,3 @@
 <p>my-comp works!</p>
-<p>{{myText}}</p>
-<button (click)="changeText()">Click Me!</button>
-<br><br>
-<button (click)="changeEvent($event)">Click Me!</button>
-<hr>
-<input (keyup)="onKeyPressed($event)">
-<p>{{myInputText}}</p>
+<input type="text" [(ngModel)]="textValue">
+<h2>{{textValue}}</h2>
