@@ -7,24 +7,8 @@ import { Subject } from 'rxjs';
   styleUrls: ['./my-comp.component.css']
 })
 export class MyCompComponent implements OnInit {
-  myText:string ="This is mytext";
-  myInputText:string ="";
-  
+  public textValue:string = "";
   constructor() { }
-
-  changeText(){
-    this.myText = "This is new";
-  }
-  changeEvent(event:any){
-    console.log(event);
-    console.log(event.srcElement.innerText);
-    event.srcElement.innerText = "This Has been changed";
-  }
-
-  onKeyPressed(event:any){
-    this.myInputText+=event.target.value + ' && ';
-  }
-  
 
   ngOnInit(): void {
   }
