@@ -7,7 +7,13 @@ import { Subject } from 'rxjs';
   styleUrls: ['./my-comp.component.css']
 })
 export class MyCompComponent implements OnInit {
-  public textValue:string = "";
+  public data: string="Hey There!";
+  public animalName:string ='';
+  public dateObj = new Date();
+  public sampleJson={
+    name:'Sam',
+    age:45
+  }
   constructor() { }
 
   ngOnInit(): void {

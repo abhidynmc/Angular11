@@ -4,10 +4,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyCompComponent } from './my-comp/my-comp.component';
 import { FormsModule } from '@angular/forms';
+import { DefaultPipe } from './default.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-    MyCompComponent
+    MyCompComponent,
+    DefaultPipe
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,12 @@
 <p>my-comp works!</p>
-<input type="text" [(ngModel)]="textValue">
-<h2>{{textValue}}</h2>
+<h2> {{data | uppercase}}</h2>
+<h2> {{data | lowercase}}</h2>
+<h2> {{data | titlecase}}</h2>
+<h2> {{data | slice:2:4}}</h2>
+<h2> {{sampleJson | json}}</h2>
+<h2> {{74.4545343 | number:'3.4-10'}}</h2>
+<h2> {{ 0.36 | percent}}</h2>
+<h2> {{67 | currency}}</h2>
+<h2> {{67 | currency : 'INR'}}</h2>
+<h2> {{ dateObj | date:'medium' | uppercase}}</h2>
+<h2>{{animalName | default:'Animal does not exists.'}}</h2>
